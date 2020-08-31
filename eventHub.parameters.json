@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namespaceName": {
+      "value": "devEventHubNamespace"
+    },
+    "skipNamespaceDeployment": {
+      "value": "yes"
+    },
+    "eventHubName": {
+      "value": "devEventHub"
+    },
+    "accessPolicyName": {
+      "value": "devsas"
+    },
+    "resourceTags": {
+      "value": {
+        "Category": "Ingestion",
+        "Environment": "Development"
+      }
+    },
+    "eventHubSku": {
+      "value": "Standard"
+    },
+    "isAutoInflateEnabled": {
+      "value": "True"
+    },
+    "messageRetentionInDays": {
+      "value": "2"
+    },
+    "partitionCount": {
+      "value": "2"
+    },
+    "maximumThroughputUnits": {
+      "value": "1"
+    }
+  }
+}
