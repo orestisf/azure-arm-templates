@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "linuxcontainergroup"
+        },
+        "image": {
+            "value": "username/container:latest"
+        },
+        "port": {
+            "value": "80"
+        },
+        "cpuCores": {
+            "value": "1.0"
+        },
+        "memoryInGb": {
+            "value": "1.0"
+        },
+        "restartPolicy": {
+            "value": "never"
+        },
+        "osType": {
+            "value": "linux"
+        },
+        "imageRegistryLoginServer": {
+            "value": "index.docker.io"
+        },
+        "imageRegistryUsername": {
+            "value": "USERNAME"
+        },
+        "imageRegistryPassword": {
+            "value": "PASSWORD"
+        },
+        "CONSUMER_KEY": {
+            "value": "SOMEKEY"
+        },
+        "CONSUMER_SECRET": {
+            "value": "SOMEKEY"
+        },
+        "ACCESS_KEY": {
+            "value": "SOMEKEY"
+        },
+        "ACCESS_SECRET": {
+            "value": "SOMEKEY"
+        },
+        "EVENTHUB_ENDPOINT": {
+            "value": "SOMEENDPOINT"
+        },
+        "EVENTHUB_NAME": {
+            "value": "SOMENAME"
+        },
+        "RUNTIME_MINS": {
+            "value": "1"
+        },
+        "resourceTags": {
+            "value": {
+                "Category": "Ingestion",
+                "Environment": "Development"
+            }
+        }
+    }
+}

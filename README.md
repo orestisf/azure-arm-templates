@@ -4,7 +4,8 @@ A collection of Azure ARM templates to quickly provision necessary resources for
 - A CosmosDB account with a free-tier database and a document container using the Core SQL api
 - A Storage account with a blob container
 - An Event Hub namespace with an event hub instance
-- A Stream Analytics job configured to use the event hub instance as input and output to the CosmosDB container 
+- A Stream Analytics job configured to use the event hub instance as input and output to the CosmosDB container
+- An Azure Container instance configured to deploy a container from a private Docker Hub repository using several environmental variables
 
 Each resource has a dedicated parameters.json file.
 
